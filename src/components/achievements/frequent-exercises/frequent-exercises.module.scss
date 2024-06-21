@@ -1,0 +1,34 @@
+@import "src/assets/style/variables";
+
+.history {
+
+  :global {
+    h5.ant-typography {
+      width: 200px;
+      font: $font-s;
+      color: $gray10;
+      padding-bottom: $gap-l;
+      margin: 0;
+
+    }
+
+    ul.ant-list-items {
+      width: 260px;
+    }
+
+    li.ant-list-item {
+      border: none;
+      font: $font-s;
+    }
+  }
+
+  .load {
+    width: 100px;
+    font-weight: $font-weight-xl;
+    margin-left: $gap-m;
+    color: $gray10;
+    display: block;
+    text-align: start;
+    word-wrap: break-word;
+  }
+}

@@ -1,0 +1,29 @@
+@import "src/assets/style/variables";
+
+.container {
+  height: 100%;
+  width: 100%;
+  padding: 0 $gap-xl;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .card {
+    margin-bottom: $gap-l;
+    padding: $gap-7xl $gap-11xl;
+    text-align: center;
+    width: 100%;
+
+    .content {
+      max-width: 520px;
+      margin: 0 auto;
+
+      .title {
+        margin-bottom: $gap-7xl;
+        font:$font-xl-tablet;
+        color: $primaryLight9;
+      }
+    }
+  }
+}

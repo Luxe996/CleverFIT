@@ -1,0 +1,64 @@
+@import "src/assets/style/variables";
+
+.container {
+  background: $primaryLight1;
+  height: auto;
+  overflow: hidden;
+  padding: $gap-m $gap-xl $gap-xl;
+
+
+  .header{
+    line-height: 1;
+    display: flex;
+    justify-content: space-between;
+
+    :global {
+      .ant-btn {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: $gap-xs;
+      }
+    }
+
+
+
+
+    @media (max-width: $mobile-width) {
+      row-gap: $gap-2s;
+    }
+
+    .title {
+      font: $font-xl;
+      grid-column: 1/ 2;
+      margin: 0;
+      @media (max-width: $tablet-width) {
+        font: $font-xl-tablet;
+      }
+      @media (max-width: $mobile-width) {
+        font: $font-l;
+      }
+    }
+
+    .pageTitle {
+      font: $font-l;
+      @media (max-width: $mobile-width) {
+        font: $font-s;
+      }
+    }
+
+    .settings {
+      margin-left: auto;
+    }
+
+    :global {
+      @media (max-width: $mobile-width) {
+        .ant-btn span {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

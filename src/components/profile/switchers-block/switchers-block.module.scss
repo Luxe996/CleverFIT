@@ -1,0 +1,28 @@
+@import "src/assets/style/variables";
+
+.switchers {
+  display: flex;
+  flex-direction: column;
+  gap: $gap-m;
+  margin-bottom: $gap-10xl;
+
+  .switcher {
+    max-width: 505px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .item {
+      display: flex;
+      align-items: center;
+      gap: $gap-3xs;
+    }
+
+    :global {
+      .ant-switch-checked {
+        background: $primaryLight6;
+      }
+    }
+
+  }
+}

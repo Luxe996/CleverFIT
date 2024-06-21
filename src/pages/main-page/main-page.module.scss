@@ -1,0 +1,32 @@
+@import "src/assets/style/variables";
+
+:global(.ant-layout ){
+    background: none;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    flex-wrap: wrap;
+    row-gap: $gap-xl;
+    padding: 0 $gap-xl $gap-6xl $gap-xl;
+    background: none;
+    @media (max-width: $mobile-width) {
+        padding: $gap-m;
+        justify-content: center;
+
+        :global{
+            .ant-card-head-title {
+                text-align: center;
+            }
+        }
+    }
+    &-card {
+        width: 240px;
+        @media (max-width: $mobile-width) {
+            flex-grow: 2;
+            order: -1;
+        }
+    }
+}

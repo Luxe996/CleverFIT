@@ -1,0 +1,27 @@
+@import "src/assets/style/variables";
+
+.error {
+  display: flex;
+  align-items: flex-start;
+  gap: $gap-m;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-xs;
+    width: 100%;
+
+    .title {
+      color: $gray10;
+      max-width: 250px;
+    }
+
+    .description {
+      color: $gray7;
+    }
+
+    .btn {
+      align-self: flex-end;
+    }
+  }
+}

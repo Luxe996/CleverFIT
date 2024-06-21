@@ -1,0 +1,38 @@
+@import "src/assets/style/variables";
+.container {
+  position: relative;
+
+  h4 {
+    font-size: $font-size-s;
+    font-weight: 700;
+    color: $gray10;
+  }
+
+  h5 {
+    font:$font-s;
+    color: $gray7;
+  }
+
+ .trainings {
+    list-style: none;
+    margin: $gap-4xl 0 0 0;
+
+    li {
+      :global {
+        .ant-btn-link {
+          padding: 0;
+          height: auto;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          span{
+            margin: $gap-4xs 0;
+            &:first-child{
+              margin-left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+@import "src/assets/style/variables";
+.confirm {
+  text-align: center;
+  .icon {
+    font-size: 80px;
+    margin-bottom: $gap-xl;
+    color: #2f54eb;
+  }
+
+  .title {
+    font: $font-xl-tablet;
+    margin-bottom: 0;
+  }
+  .description{
+    font:$font-s;
+    color: rgba(140, 140, 140, 1);
+  }
+  .container {
+    margin: $gap-xl auto;
+  }
+
+  .character {
+    border: 1px solid $gray5;
+    border-radius: $border-radius-xs;
+  }
+
+  .error {
+    border: 1px solid #ff4d4f;
+    border-radius: $border-radius-xs;
+  }
+  .inactive {
+    background: none;
+  }
+  .filled {
+    font: $font-s;
+  }
+}

@@ -1,0 +1,112 @@
+@import "src/assets/style/variables";
+
+.calendar {
+  background: $primaryLight1;
+  padding: 0 $gap-xl $gap-10xl;
+  margin-bottom: $gap-7xl;
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: $gap-12xl;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: $gap-xl;
+  }
+
+
+  :global {
+    .ant-select {
+      text-align: center;
+    }
+    .ant-picker-calendar-header {
+      @media (max-width: $mobile-width) {
+        display: flex;
+        background: $gray1;
+      }
+
+      .ant-radio-group {
+        margin: 0 $gap-xs;
+      }
+    }
+
+
+    .ant-radio-button-wrapper:hover {
+      color: $primaryLight6;
+    }
+    .ant-radio-button-wrapper-checked {
+      color: $primaryLight6;
+    }
+
+    .ant-radio-button-checked {
+      border: 1px solid $primaryLight6;
+    }
+
+    .ant-picker-panel {
+      .ant-picker-body {
+        padding: 0;
+        background: $primaryLight1;
+        @media (max-width: $mobile-width) {
+          background: $gray1;
+          padding-top: $gap-xs;
+        }
+        thead {
+          th {
+            color: $gray7;
+
+            @media (max-width: $mobile-width) {
+              background: $gray1;
+              color: $gray13;
+              font-weight: $font-weight-l;
+            }
+          }
+
+          background: $primaryLight1;
+        }
+      }
+      .ant-picker-calendar-date-content {
+        overflow-y: visible;
+      }
+      .ant-picker-cell {
+        .ant-picker-calendar-date-today {
+          border-color: $primaryLight6;
+          background: $gray1;
+
+          .ant-picker-calendar-date-value {
+            color: $gray10;
+          }
+        }
+      }
+
+      .ant-picker-cell-inner {
+        background: $gray1;
+        margin: 0 $gap-4xs;
+        padding: $gap-3xs $gap-xs;
+        &::before {
+          border: 1px solid $primaryLight6;
+        }
+
+        @media (min-width: $mobile-width) {
+          min-height: 143px;
+        }
+
+        &:hover {
+          background: $gray1;
+        }
+        &:has(div#hideTrainings) {
+          @media (max-width: $mobile-width) {
+            background-color: $gray3;
+          }
+        }
+      }
+
+      .ant-picker-cell-selected {
+        .ant-picker-calendar-date {
+          background: $gray1;
+          .ant-picker-calendar-date-value {
+            color: $gray10;
+          }
+        }
+      }
+    }
+  }
+}

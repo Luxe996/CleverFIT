@@ -1,0 +1,60 @@
+@import "src/assets/style/variables";
+
+.container {
+    position: relative;
+    background: $gray1;
+    margin: $gap-xl $gap-xl $gap-6xl;
+    border-radius: $border-radius-m;
+    padding: $gap-xl;
+    @media (max-width: $tablet-width) {
+        padding: $gap-m $gap-xl;
+    }
+
+    .tabs {
+
+        :global {
+            .ant-tabs-tab-active .ant-tabs-tab-btn {
+                color: $primaryLight6;
+            }
+
+            .ant-tabs-tab .ant-tabs-tab-btn{
+                font:$font-xl-tablet;
+                color: $gray10;
+
+                @media (max-width: $tablet-width) {
+                    font:$font-s;
+                }
+            }
+            .ant-tabs-tab-btn[aria-disabled="true"] {
+                color: $gray6;
+            }
+
+            .ant-tabs-ink-bar {
+                background: $primaryLight6;
+            }
+
+            .ant-tabs-top > .ant-tabs-nav {
+                margin: 0 0 $gap-4xl 0;
+            }
+
+            .ant-tabs-nav-list {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                padding: 0 $gap-m $gap-m;
+
+                @media (max-width: $tablet-width) {
+                    width: initial;
+                }
+            }
+        }
+
+        .badge {
+            width: 24px;
+            height: 16px;
+            margin-left: $gap-s;
+        }
+    }
+}
+
+

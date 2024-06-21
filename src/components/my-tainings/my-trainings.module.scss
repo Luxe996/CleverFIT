@@ -1,0 +1,12 @@
+@import "src/assets/style/variables";
+.empty{
+  height: 100%;
+  padding-top: $gap-11xl;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  p{
+    font: $font-xl-tablet;
+    margin: $gap-9xl;
+  }
+}

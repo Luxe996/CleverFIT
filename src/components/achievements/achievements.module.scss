@@ -1,0 +1,75 @@
+@import "src/assets/style/variables";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: $gap-xl;
+}
+
+.charts {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: $gap-11xl;
+
+  & > * {
+    height: 375px;
+
+    @media (max-width: 1080px) {
+      height: fit-content;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 1230px) {
+    gap: $gap-xl;
+  }
+
+  @media (max-width: 1080px) {
+    flex-direction: column;
+  }
+  .pie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 520px;
+
+    @media (max-width: 1080px) {
+      min-height: 230px;
+      max-height: 230px;
+      width: 100%;
+      padding-top: $gap-xl;
+    }
+  }
+}
+
+.chart {
+  border: 1px solid $gray6;
+  border-radius: $border-radius-xs;
+  width: 520px;
+
+  @media (max-width: 1080px) {
+    width: 100%;
+  }
+
+  @media (max-width: $mobile-width) {
+    height: 235px;
+  }
+}
+
+
+.chartsMonth {
+  flex-direction: column;
+  gap: $gap-xl;
+
+  & > * {
+    min-height: 375px;
+    width: 100%;
+
+    @media (max-width: $mobile-width) {
+      min-height: fit-content;
+    }
+  }
+}
+
+

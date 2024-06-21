@@ -1,0 +1,43 @@
+@import "src/assets/style/variables";
+
+.logo {
+  max-width: 133px;
+  height: 33px;
+  margin: $gap-3xl $gap-3xl $gap-11xl;
+}
+
+.collapsed {
+  margin: $gap-xl $gap-m $gap-8xl;
+}
+.full {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clever {
+  width: 98px;
+}
+
+.fit {
+  width: 34px;
+}
+
+.clever, .fit {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: $mobile-width) {
+  .logo {
+    margin: $gap-m $gap-m $gap-10xl;
+  }
+  .collapsed {
+    width: 18px;
+  }
+  .clever {
+    width: 52px;
+  }
+  .fit {
+    width: 20px;
+  }
+}

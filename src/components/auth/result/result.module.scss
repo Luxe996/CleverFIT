@@ -1,0 +1,22 @@
+@import "src/assets/style/variables";
+
+.result {
+  text-align: center;
+
+  .title {
+    margin-bottom: 0;
+    font:$font-xl-tablet;
+  }
+
+  .text {
+    color: rgba(140, 140, 140, 1);
+    font:$font-m;
+  }
+
+  .button {
+    margin-top: $gap-xl;
+    width: 100%;
+    height: 40px;
+    background-color: $primaryLight6;
+  }
+}

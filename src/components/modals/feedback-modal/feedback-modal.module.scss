@@ -1,0 +1,29 @@
+@import "src/assets/style/variables";
+.form {
+  :global{
+    .ant-rate-star-full .anticon svg path:last-child,
+    .ant-rate-star-full .anticon svg path:first-child,
+    .ant-rate-star-zero .anticon svg path:last-child {
+      fill: $starColor;
+    }
+    .ant-rate-star-zero .anticon svg path:first-child {
+      fill: transparent;
+    }
+    .ant-modal-body{
+      padding: 0;
+    }
+    .ant-modal-content{
+      padding: $gap-m $gap-xl;
+    }
+    .ant-result{
+      padding: $gap-8xl;
+      font-weight: $font-weight-l;
+    }
+
+    @media (max-width: $mobile-width) {
+      .ant-result{
+        padding: $gap-4xl $gap-m;
+      }
+    }
+  }
+}

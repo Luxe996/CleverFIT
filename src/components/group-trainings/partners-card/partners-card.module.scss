@@ -1,0 +1,58 @@
+@import "src/assets/style/variables";
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 254px;
+
+    .userInfo {
+        align-items: center;
+        font: $font-s;
+    }
+
+    .trainingInfo {
+        margin-top: $gap-xs;
+        font: $font-xs;
+
+        .trainingValues {
+            font-size: $font-size-s;
+            font-weight: $font-weight-l;
+            color: $primaryLight6;
+        }
+    }
+
+    .status {
+        text-align: center;
+        margin-top: $gap-s;
+    }
+
+    :global {
+        .ant-card-body {
+            padding: $gap-m $gap-m $gap-xs;
+        }
+
+        .ant-btn {
+            height: 28px;
+            padding: $gap-3xs 0;
+            width: 100%;
+            font: $font-s;
+        }
+
+        [disabled] {
+            border: 1px solid $gray5;
+            background: $gray4;
+            color: $gray6;
+        }
+    }
+}
+
+.blue {
+    background: $primaryLight1;
+}
+
+.white {
+    background: $gray1;
+}
+
+

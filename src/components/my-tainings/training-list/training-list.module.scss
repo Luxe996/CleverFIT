@@ -1,0 +1,32 @@
+@import "src/assets/style/variables";
+
+.container {
+    width: 50%;
+
+    @media (max-width: $tablet-width) {
+        width: 100%;
+    }
+
+    @media (max-width: $mobile-width) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 12px;
+        width: 100%;
+    }
+}
+
+:global(.ant-table-thead > tr > th) {
+    font: $font-xs;
+}
+
+.addButton {
+    margin-top: $gap-9xl;
+
+    @media (max-width: $mobile-width) {
+        margin-top: $gap-l;
+        button {
+            width: 100%;
+        }
+    }
+}

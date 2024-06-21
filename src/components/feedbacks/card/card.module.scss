@@ -1,0 +1,63 @@
+@import "src/assets/style/variables";
+.comment {
+  margin-bottom: $gap-l;
+  width: 100%;
+  background:$gray1;
+  :global{
+    .ant-comment-inner{
+      min-height: 128px;
+      padding: $gap-m;
+    }
+    .ant-comment-avatar {
+      width: 175px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .ant-avatar{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .ant-rate {
+      margin-right: $gap-m;
+      font-size: $font-size-m;
+    }
+
+    .ant-rate-star-full .anticon svg path:last-child,
+    .ant-rate-star-full .anticon svg path:first-child,
+    .ant-rate-star-zero .anticon svg path:last-child {
+      fill: $starColor;
+    }
+    .ant-rate-star-zero .anticon svg path:first-child {
+      fill: transparent;
+    }
+
+    @media (max-width: $mobile-width) {
+      .ant-comment-inner{
+        height: auto;
+        flex-direction: column;
+      }
+      .ant-comment-avatar {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: $gap-s;
+        p{
+          margin: 0 0 0 $gap-m;
+          text-align: left;
+        }
+      }
+      .ant-comment-content-author{
+        margin-bottom: $gap-s;
+      }
+    }
+  }
+
+  .author {
+    max-width: 85px;
+    margin: 0 auto;
+    word-break: break-word;
+  }
+}

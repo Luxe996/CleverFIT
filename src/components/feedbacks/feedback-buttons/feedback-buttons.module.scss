@@ -1,0 +1,14 @@
+@import "src/assets/style/variables";
+@media (max-width: $mobile-width) {
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: $gap-6xl;
+
+    :global {
+      .ant-btn-primary {
+        margin-bottom: $gap-m;
+      }
+    }
+  }
+}

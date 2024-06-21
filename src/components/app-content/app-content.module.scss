@@ -1,0 +1,36 @@
+@import "src/assets/style/variables";
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(182px, 1fr));
+  grid-auto-flow: row;
+  row-gap: $gap-xl;
+  max-width: 752px;
+  column-gap: $gap-m;
+  padding: $gap-xl;
+
+
+  @media (max-width: $mobile-width) {
+    padding: $gap-xl $gap-m;
+    margin-bottom: 0;
+  }
+}
+
+.advantages {
+  grid-column: 1/ -1;
+  padding: $gap-xl;
+  font: $font-m;
+  color: $primaryLight9;
+  background-color: $gray1;
+
+  @media (max-width: $mobile-width) {
+    padding: $gap-m;
+  }
+}
+
+.advantages-text {
+  grid-column: 1/ -1;
+  padding: $gap-xl;
+  font:$font-l;
+  background-color: $gray1;
+}

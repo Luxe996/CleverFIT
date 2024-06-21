@@ -1,0 +1,59 @@
+@import "src/assets/style/variables";
+.container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+  }
+
+  :global {
+    .ant-card-head {
+      border-bottom: none;
+      padding: 0;
+    }
+
+    .ant-card-head-title {
+      font:$font-xl;
+      color: $gray10;
+      padding: 0;
+      text-align: center;
+      text-overflow: unset;
+    }
+
+    .ant-card {
+      border: 1px solid $gray3;
+      border-radius: $border-radius-xs;
+      padding: $gap-xl;
+      box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+
+      @media (max-width: $mobile-width) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        gap: $gap-m;
+        padding: $gap-m;
+      }
+    }
+
+    .ant-card-body {
+      font: $font-s;
+      text-align: center;
+      color: $gray7;
+      padding: $gap-m 0 0;
+
+      @media (max-width: $mobile-width) {
+        padding: 0;
+        text-align: start;
+      }
+
+    }
+    .ant-space-item{
+      @media (max-width: $mobile-width) {
+        width: 100%;
+      }
+    }
+  }
+}

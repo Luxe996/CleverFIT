@@ -1,0 +1,22 @@
+@import "src/assets/style/variables";
+.button-menu {
+  border-top: 1px solid transparent;
+  transform: translateY(-100%);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+
+  position: absolute;
+  top: 100%;
+  font:$font-s;
+
+}
+
+:global {
+  .ant-btn{
+    border: none;
+    span {
+      margin-left: $gap-2s;
+    }
+  }
+}

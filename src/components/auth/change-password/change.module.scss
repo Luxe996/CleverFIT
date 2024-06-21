@@ -1,0 +1,33 @@
+@import "src/assets/style/variables";
+
+.form {
+  font-size: $font-size-xs;
+
+  .title {
+    text-align: center;
+    margin-bottom: $gap-4xl;
+    font: $font-xl-tablet;
+  }
+  .button{
+    background-color: $primaryLight6;
+    height: 40px;
+  }
+  :global {
+    .ant-btn{
+      width: 100%;
+    }
+    .ant-form-item:last-child {
+      margin-top: $gap-8xl;
+      margin-bottom: 0;
+    }
+    .ant-form-item-with-help{
+      margin-bottom: $gap-4xl;
+    }
+    .ant-input-password{
+      height: 40px;
+    }
+    .ant-form-item-explain{
+      font-size: $font-size-xs;
+    }
+  }
+}

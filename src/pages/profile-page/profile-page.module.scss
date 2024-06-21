@@ -1,0 +1,90 @@
+@import "src/assets/style/variables";
+
+.container {
+  position: relative;
+  background: $gray1;
+  margin: $gap-xl $gap-xl $gap-7xl;
+  border-radius: $border-radius-m;
+  padding: $gap-xl;
+  @media (max-width: $mobile-width) {
+    padding: $gap-m $gap-xl;
+  }
+
+  :global {
+    .ant-form {
+      max-width: 480px;
+    }
+
+    .ant-form-item {
+      margin: 0;
+    }
+
+    .ant-form-item-label {
+      padding: 0;
+    }
+
+    .ant-form-vertical .ant-form-item-label > label {
+      font: $font-l;
+      color: $gray10;
+      margin-bottom: $gap-xl;
+      @media (max-width: $mobile-width) {
+        margin-bottom: $gap-l;
+      }
+    }
+
+    .ant-input, .ant-picker {
+      height: 40px;
+
+      &-affix-wrapper {
+        padding: 0 $gap-2s;
+      }
+    }
+
+    .ant-btn[disabled] {
+      border: 1px solid $gray5;
+      background: $gray4;
+      color: $gray6;
+    }
+
+    @media (max-width: $mobile-width) {
+      .ant-btn-primary {
+        width: 100%;
+      }
+    }
+
+  }
+
+  .info {
+    display: flex;
+    gap: $gap-xl;
+
+    @media (max-width: $mobile-width) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .alert {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: $gap-3xl;
+    @media (max-width: $mobile-width) {
+      justify-content: flex-start;
+    }
+
+    :global {
+      .ant-alert {
+        width: 395px;
+        text-align: center;
+
+
+        @media (max-width: $mobile-width) {
+          width: 100%;
+          text-align: start;
+        }
+      }
+    }
+  }
+}

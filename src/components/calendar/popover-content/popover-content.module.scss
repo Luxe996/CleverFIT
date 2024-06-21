@@ -1,0 +1,23 @@
+@import "src/assets/style/variables";
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height:100%;
+  :global {
+    .ant-btn-primary {
+      width: 100%;
+    }
+    .ant-btn-primary:hover {
+      background: $primaryLight5;
+    }
+    .ant-btn-primary[disabled] {
+      border: 1px solid $gray5;
+      background: $gray3;
+      color: $gray6;
+    }
+    .ant-divider {
+      margin: $gap-m 0;
+    }
+  }
+}

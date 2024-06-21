@@ -1,0 +1,25 @@
+@import "src/assets/style/variables";
+.trigger {
+  width: 22px;
+  height: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $gray1;
+  clip-path: polygon(0 0, 100% 12%, 100% 88%, 0% 100%);
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+
+  @media (max-width: $mobile-width) {
+    top: 8%;
+    width: 32px;
+    height: 48px;
+  }
+
+
+  & :hover {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,26 @@
+@import "src/assets/style/variables";
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: $gap-m;
+
+  .content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: $gap-10xl;
+
+    @media (max-width: $tablet-width) {
+      gap: $gap-8xl;
+    }
+  }
+
+  .contentName {
+    font: $font-xl-tablet;
+    color: $gray10;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: $gap-xl;
+  }
+}

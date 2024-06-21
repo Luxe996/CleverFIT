@@ -1,0 +1,6 @@
+@import "src/assets/style/variables";
+.container{
+  margin: $gap-xl $gap-xl $gap-7xl;
+  border-radius: $border-radius-m;
+  background: $gray1;
+}

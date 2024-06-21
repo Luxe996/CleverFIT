@@ -1,0 +1,73 @@
+@import "src/assets/style/variables";
+
+.drawer {
+    :global {
+        .ant-drawer-header {
+            border: 0;
+        }
+
+        .ant-drawer-mask {
+            background: transparent;
+        }
+
+        .ant-drawer-content-wrapper {
+            @media (max-width: $mobile-width) {
+                width: 100%;
+                border-radius: $border-radius-3xl $border-radius-3xl 0 0;
+            }
+        }
+        .ant-drawer-content {
+            @media (max-width: $mobile-width) {
+                border-radius: $border-radius-3xl $border-radius-3xl 0 0;
+            }
+        }
+
+        .ant-drawer-header-title {
+            flex-direction: row-reverse;
+        }
+
+        .ant-btn-primary {
+            width: 100%;
+        }
+
+        .ant-btn-primary[disabled] {
+            border: 1px solid $gray5;
+            background: $gray3;
+            color: $gray6;
+        }
+    }
+
+    .content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .userInfo {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: $gap-xl;
+
+            .userName {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .buttons {
+            margin-top: $gap-xl;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        :global {
+            .ant-select {
+                margin-bottom: $gap-xl;
+            }
+
+            .ant-checkbox + span {
+                padding-right: 0;
+            }
+        }
+    }
+}

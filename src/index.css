@@ -1,0 +1,37 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+
+body {
+    font-family: Inter, sans-serif;
+    overflow-y: scroll;
+    position: relative;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+:root .ant-btn-primary {
+    height: 40px;
+    background: #2F54EB;
+    border-color: #2F54EB;
+}
+
+:root .ant-btn-primary span {
+    margin: 0;
+}
+
+:root .ant-btn-link {
+    color: #2F54EB;
+}

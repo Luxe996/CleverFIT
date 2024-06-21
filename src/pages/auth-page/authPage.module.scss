@@ -1,0 +1,66 @@
+@import "../../assets/style/variables";
+
+.logo {
+  width: 100%;
+  height: 76px;
+  margin-bottom: $gap-7xl;
+}
+
+.tabs {
+  :global {
+    .ant-tabs-tab {
+      width: 50%;
+      justify-content: center;
+      font-size: 14px;
+    }
+
+    .ant-tabs-tab + .ant-tabs-tab {
+      margin: 0;
+    }
+
+    .ant-tabs-tab-active .ant-tabs-tab-btn {
+      color: $primaryLight6;
+    }
+
+    .ant-tabs-ink-bar {
+      background: $primaryLight6;
+    }
+
+    .ant-tabs-nav-list {
+      width: 100%;
+    }
+
+    .ant-tabs-nav {
+      margin-bottom: $gap-xl;
+      max-height: 46px;
+    }
+
+
+
+    .ant-btn{
+      height: 40px;
+    }
+    .ant-btn-primary{
+      background: $primaryLight6;
+    }
+    .ant-btn-link {
+      color: $primaryLight6;
+      font:$font-s;
+    }
+    .ant-checkbox-checked .ant-checkbox-inner{
+      background: $primaryLight6;
+      border-color: $primaryLight6;
+    }
+    .ant-input-group-addon{
+      color: $gray10;
+    }
+    .ant-checkbox-wrapper{
+      font:$font-weight-l;
+      display: flex;
+      width: 100%;
+    }
+    .ant-row-no-wrap {
+      margin-bottom: $gap-xl;
+    }
+  }
+}

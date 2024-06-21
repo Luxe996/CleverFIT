@@ -1,0 +1,17 @@
+@import "src/assets/style/variables";
+
+.prices {
+  margin-bottom: $gap-xl;
+}
+
+.icons {
+  display: flex;
+  gap: $gap-7xl;
+  font-size: $font-size-m;
+}
+
+:global {
+  .ant-radio-wrapper {
+    margin: 0;
+  }
+}

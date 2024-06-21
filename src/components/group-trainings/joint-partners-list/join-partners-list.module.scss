@@ -1,0 +1,45 @@
+@import "src/assets/style/variables";
+.container{
+    .searchBlock{
+        display: flex;
+        justify-content: center;
+        margin-top: $gap-xl;
+        .back{
+            position:absolute;
+            left:0;
+            width: 100px;
+            font-size: $font-size-m;
+            font-weight: $font-weight-l;
+            color: $gray13;
+            @media (max-width: $tablet-width) {
+                top:-10px;
+            }
+        }
+        .search{
+            width: 480px;
+            :global{
+                .ant-btn-default{
+                    box-shadow: none;
+                    border: 1px solid $gray5;
+                }
+            }
+            @media (max-width: $tablet-width) {
+                margin-top: $gap-4xl;
+            }
+        }
+    }
+    :global{
+        .ant-list-items{
+            display: flex;
+            flex-wrap: wrap;
+            gap: $gap-m;
+            margin-top: $gap-xl;
+            @media (max-width: $tablet-width) {
+                justify-content: center;
+            }
+        }
+        .ant-list-pagination{
+            text-align: left;
+        }
+    }
+}

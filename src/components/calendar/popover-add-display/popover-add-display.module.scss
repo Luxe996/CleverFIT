@@ -1,0 +1,18 @@
+@import "src/assets/style/variables";
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .exercises {
+    :global {
+      .ant-btn-text {
+        color: $gray7;
+        padding: 0;
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+@import "src/assets/style/variables";
+
+.container {
+  position: relative;
+  background: $gray1;
+  margin: $gap-xl $gap-xl $gap-6xl;
+  border-radius: $border-radius-m;
+  padding: $gap-xl;
+  @media (max-width: $tablet-width) {
+    padding: $gap-m $gap-xl;
+  }
+  .tabs{
+    height: 100%;
+
+    :global {
+      .ant-tabs-tab-active .ant-tabs-tab-btn {
+        color: $primaryLight6;
+      }
+
+      .ant-tabs-tab .ant-tabs-tab-btn{
+        font: $font-xl-tablet;
+        color: $gray10;
+
+        @media (max-width: 900px) {
+          font-size: 16px;
+        }
+      }
+
+      .ant-tabs-tab-btn[aria-disabled="true"] {
+        color: $gray6;
+      }
+
+      .ant-tabs-tab .ant-tabs-tab-btn:hover {
+        color: $primaryLight5;
+      }
+
+      .ant-tabs-tab-btn[aria-disabled="true"]:hover {
+        color: $gray6;
+      }
+
+      .ant-tabs-ink-bar {
+        background: $primaryLight6;
+      }
+
+      .ant-tabs-nav {
+        margin-bottom:  $gap-5xl;
+      }
+
+      .ant-tabs-nav-list {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 $gap-m $gap-m;
+
+        @media (max-width: $tablet-width) {
+          width: initial;
+        }
+      }
+    }
+  }
+}

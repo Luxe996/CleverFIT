@@ -1,0 +1,47 @@
+@import "src/assets/style/variables";
+
+.container {
+  &:not(:first-of-type){
+    padding: $gap-xl 0 0 ;
+  }
+
+  :global {
+    .ant-input-number-group-wrapper {
+      width: 90px;
+    }
+    .ant-input-number-group-wrapper:first-child {
+      width: 120px;
+      margin-right: $gap-m;
+    }
+  }
+
+  .inputTitle, .input{
+    display: flex;
+    margin: $gap-xs 0;
+    justify-content: space-between;
+
+    .text{
+      font-size: $font-size-xs;
+      padding: $gap-3xs $gap-xs;
+      width: 90px;
+      height: 24px;
+      background: $gray4;
+      &:first-child {
+        width: 120px;
+        margin-right: $gap-m;
+      }
+      &:nth-child(2){
+        margin-right: $gap-m;
+        @media (max-width: $mobile-width) {
+          margin-right: $gap-7xl;
+        }
+      }
+    }
+
+     .plus{
+      color: $gray6;
+      padding: 0 $gap-3xs;
+      width: 16px;
+    }
+  }
+}

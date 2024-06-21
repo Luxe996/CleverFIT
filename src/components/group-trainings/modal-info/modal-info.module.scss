@@ -1,0 +1,65 @@
+@import "src/assets/style/variables";
+
+.trainingInfo {
+    display: flex;
+
+    .trainingTitle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font: $font-xs;
+    }
+
+    .trainingValue {
+        font-size: $font-size-s;
+        font-weight: $font-weight-l;
+        color: $primaryLight6;
+    }
+}
+
+.statusBlock {
+    margin-top: $gap-xl;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: $mobile-width) {
+        padding: 0 $gap-s $gap-m;
+    }
+
+    .status {
+        & > span {
+            margin-left: $gap-xs;
+        }
+    }
+}
+
+@media (max-width: $mobile-width) {
+    .partnerInfo {
+        flex-direction: column;
+        padding: $gap-m $gap-s 0;
+
+        .trainingInfo {
+            margin-top: $gap-s;
+
+            .trainingTitle {
+                display: block;
+
+                & > div:last-child {
+                    margin-top: $gap-xs;;
+                }
+            }
+        }
+    }
+
+    .statusBlock {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-top: $gap-m;
+        width: 100%;
+
+        .status {
+            margin-top: $gap-m;
+            text-align: center;
+        }
+    }
+}

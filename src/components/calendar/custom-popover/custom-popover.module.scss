@@ -1,0 +1,25 @@
+@import "src/assets/style/variables";
+.overlay {
+  width: 264px;
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    padding: 0 $gap-m;
+  }
+  :global {
+    .ant-popover-content {
+      height: 100%;
+    }
+    .ant-popover-inner-content {
+      width: 100%;
+    }
+  }
+}
+
+.trigger {
+  width: 100%;
+  height: 110%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}

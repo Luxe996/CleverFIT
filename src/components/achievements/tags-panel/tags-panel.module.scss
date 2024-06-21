@@ -1,0 +1,29 @@
+@import "src/assets/style/variables";
+
+.container {
+  display: flex;
+  padding: $gap-m 0;
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+  }
+
+  .tags {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: $gap-s;
+    flex-wrap: wrap;
+
+    .active {
+      border: 1px solid $primaryLight3;
+      border-radius: $border-radius-xs;
+      color: $primaryLight6;
+    }
+  }
+
+  :global {
+    .ant-tag {
+      cursor: pointer;
+    }
+  }
+}

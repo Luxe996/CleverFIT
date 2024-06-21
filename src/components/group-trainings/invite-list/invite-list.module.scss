@@ -1,0 +1,133 @@
+@import "src/assets/style/variables";
+
+.inviteList {
+    display: flex;
+    flex-direction: column;
+    padding: $gap-xl;
+    margin-bottom: $gap-xl;
+    gap: $gap-m;
+    background-color: $gray2;
+    .inviteCard {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: $gap-m;
+        background-color: $gray1;
+        border-radius: $border-radius-xxl;
+        border-top-left-radius: 0;
+        @media (max-width: $tablet-width) {
+            flex-direction: column;
+            align-items: flex-start;
+            border-radius: $border-radius-xs;
+        }
+
+        .userInfo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font: $font-m;
+            color: $gray10;
+            width: 174px;
+            @media (max-width: $tablet-width) {
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+            }
+            .userName {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: $gap-s;
+                @media (max-width: $tablet-width) {
+                    margin-left: $gap-s;
+                }
+            }
+        }
+        .message{
+            @media (max-width: $tablet-width) {
+                margin-top: $gap-m;
+            }
+            .detailsLink {
+                margin-top: 4px;
+                color: $primaryLight6;
+                cursor: pointer;
+            }
+        }
+        .controls {
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            gap: $gap-m;
+            @media (max-width: $tablet-width) {
+                margin-top: $gap-s;
+                width: 100%;
+            }
+        }
+
+    }
+    .collapseButton {
+        text-align: start;
+        font: $font-s;
+        color: $primaryLight6;
+    }
+}
+
+.popWrapper{
+    padding-top: 0;
+    .popTitle{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .popContent{
+        .popPeriod{
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: $gap-s;
+            .period{
+                font-weight: $font-weight-l;
+                font-size: $font-size-m;
+            }
+        }
+        .exercise{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .exName{
+                font: $font-s;
+                color: $gray7;
+            }
+            .exDetails{
+                font: $font-xs;
+                color: $primaryLight6;
+            }
+        }
+
+        .popDate{
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}
+
+:global {
+    .ant-popover {
+        width: 310px;
+        height: 225px;
+    }
+
+    .ant-popover-content {
+        width: 100%;
+        height: 100%;
+    }
+
+    .ant-popover-inner-content {
+        width: 100%;
+        height: 100%;
+    }
+    .ant-divider-horizontal{
+        margin: $gap-m 0 $gap-xl;
+    }
+}

@@ -1,0 +1,116 @@
+@import "src/assets/style/variables";
+
+.container {
+  background: $gray1;
+  margin: $gap-xl $gap-xl $gap-7xl;
+  border-radius: $border-radius-m;
+  padding: $gap-xl;
+  @media (max-width: $mobile-width) {
+    padding: $gap-m $gap-xl;
+  }
+
+  .title {
+    font: $font-l;
+    margin-bottom: $gap-m;
+  }
+
+  .tarifs {
+    display: flex;
+    gap: $gap-2xl;
+    margin-bottom: $gap-xl;
+    @media (max-width: $mobile-width) {
+      flex-direction: column;
+      gap:$gap-s;
+    }
+
+    .tarif {
+      max-width: 240px;
+      border-radius: $border-radius-xs;
+      @media (max-width: $mobile-width) {
+        max-width: 100%;
+      }
+
+      :global {
+        .ant-card-head {
+          padding: 0 $gap-xl;
+        }
+
+        .ant-card-head-title {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          button {
+            padding: 0;
+          }
+        }
+
+        .ant-card-body {
+          padding: 0;
+        }
+      }
+
+      .image {
+        width: 100%;
+        height: 100%;
+      }
+
+      .status {
+        text-align: center;
+        padding: $gap-2xl;
+        font-weight: $font-weight-l;
+        font-size: $font-size-m;
+
+        p {
+          padding: $gap-2s;
+          color: $primaryLight10;
+        }
+      }
+    }
+  }
+  .isSettings{
+
+  }
+}
+:global{
+  .ant-modal-body{
+    @media (max-width: $mobile-width) {
+      padding: 0;
+    }
+  }
+  .ant-result{
+    padding: $gap-2xl $gap-4xl;
+    @media (max-width: $mobile-width) {
+      padding: $gap-4xl $gap-m;
+    }
+  }
+  .ant-result-success .ant-result-icon > .anticon{
+    color: $primaryLight6;
+  }
+  .ant-result-title{
+    font: $font-xl-tablet;
+    @media (max-width: $mobile-width) {
+      padding:0 $gap-3xl;
+    }
+  }
+  .ant-result-subtitle{
+    font: $font-s;
+    @media (max-width: $mobile-width) {
+      padding:0 $gap-m;
+    }
+  }
+  .ant-result-subtitle > span {
+    font-weight: $font-weight-xl;
+    font-size: $font-size-s;
+  }
+  .ant-result-extra{
+    font: $font-s;
+    color: $gray7;
+    @media (max-width: $mobile-width) {
+      padding:0 $gap-3xl;
+    }
+  }
+}
+
+
+

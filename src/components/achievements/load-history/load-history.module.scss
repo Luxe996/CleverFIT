@@ -1,0 +1,78 @@
+@import "src/assets/style/variables";
+
+.container {
+  :global {
+    h5.ant-typography {
+      font: $font-s;
+      color: $gray10;
+      padding-bottom: $gap-l;
+      width: 180px;
+      margin: 0;
+
+      @media (max-width: 1080px) {
+        width: 100%;
+      }
+    }
+
+    ul.ant-list-items {
+      width: 260px;
+    }
+
+    li.ant-list-item {
+      font: $font-s;
+      border: none;
+    }
+  }
+  .load{
+    font-weight: $font-weight-xl;
+  }
+}
+body {
+  :global {
+    .ant-collapse-ghost{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      @media (max-width: $mobile-width) {
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+    }
+
+    .ant-collapse-item {
+      width: fit-content;
+    }
+
+    .ant-collapse > .ant-collapse-item.ant-collapse-no-arrow > .ant-collapse-header{
+      color: $gray10;
+      cursor: default ;
+    }
+
+    .ant-collapse-content-box {
+      display: flex;
+      flex-direction: column;
+      gap: $gap-m;
+
+      div {
+        display: flex;
+        justify-content: flex-start;
+        font: $font-s;
+        gap: $gap-m;
+      }
+
+      div > span:nth-child(2) {
+        color: $gray7;
+      }
+
+      div > span:last-child {
+        font-weight: $font-weight-xl;
+        color: $gray10;
+      }
+    }
+
+    .ant-collapse-icon-position-end > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow {
+      cursor: pointer;
+    }
+  }
+}

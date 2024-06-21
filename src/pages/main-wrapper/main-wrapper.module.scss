@@ -1,0 +1,52 @@
+@import "src/assets/style/variables";
+.container {
+  max-width: 1440px;
+  min-height: 100vh;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  background: url('@public/main_page_light.jpeg') no-repeat center;
+  background-size: cover;
+
+  @media (max-width: $tablet-width) {
+    height: auto;
+  }
+  @media (max-width: $mobile-width) {
+    height: auto;
+  }
+
+  .sider {
+    background: $gray1;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+
+    @media (max-width: $mobile-width) {
+      position: fixed;
+
+      :global {
+        .ant-menu-item:not(:last-child) {
+          margin-bottom: $gap-xs;
+        }
+
+        .ant-menu-item {
+          padding: 0;
+
+          .ant-menu-title-content {
+            margin-left: $gap-xs;
+          }
+
+          .anticon {
+            display: none;
+          }
+        }
+
+        button .anticon {
+          display: none;
+        }
+      }
+    }
+  }
+}

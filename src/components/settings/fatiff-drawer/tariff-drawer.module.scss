@@ -1,0 +1,126 @@
+@import "src/assets/style/variables";
+.drawer {
+  :global {
+    .ant-drawer-mask {
+      background: transparent;
+    }
+
+    .ant-drawer-content-wrapper {
+      @media (max-width: $mobile-width) {
+        width: 100%;
+        border-radius: $border-radius-3xl $border-radius-3xl 0 0;
+      }
+    }
+
+    .ant-drawer-content {
+      @media (max-width: $mobile-width) {
+        border-radius: $border-radius-3xl $border-radius-3xl 0 0;
+      }
+    }
+
+    .ant-drawer-header {
+      border-bottom: none;
+      padding: $gap-xl $gap-4xl $gap-m;
+    }
+
+    .ant-drawer-header-title {
+      flex-direction: row-reverse;
+    }
+
+    .ant-drawer-title {
+      font: $font-l;
+      color: $gray10;
+    }
+
+    .ant-drawer-body {
+      padding: $gap-xl $gap-4xl;
+
+      .ant-radio, .ant-radio:hover .ant-radio-inner {
+        border-color: $primaryLight6;
+      }
+
+      .ant-radio-inner::after {
+        background-color: $primaryLight6;
+      }
+    }
+
+    .ant-drawer-footer {
+      padding: $gap-s $gap-4xl;
+
+      .ant-btn-primary {
+        width: 100%;
+        background: $primaryLight6;
+        color: $gray1;
+      }
+      [disabled] {
+        border: 1px solid $gray5;
+        background: $gray4;
+        color: $gray6;
+      }
+    }
+
+
+  }
+  .activePeriod{
+    padding: $gap-2m 0;
+    background: $primaryLight1;
+    color: $primaryLight10;
+    font-weight: $font-weight-l;
+    font-size: $font-size-m;
+    margin-bottom: $gap-xl;
+    text-align: center;
+  }
+
+  .benefits {
+
+    .columnNames {
+      display: flex;
+      justify-content: flex-end;
+      gap: $gap-m;
+
+
+
+      .columnName {
+        padding: $gap-xs;
+        color: $gray10;
+        background: $gray4;
+        font: $font-xs;
+        &_active{
+          color: $primaryLight7;
+          font-size: $font-size-s;
+          font-weight: $font-weight-l;
+        }
+      }
+    }
+
+    ul {
+      list-style: none;
+      padding-right: $gap-xs;
+      margin-top: $gap-3xl;
+
+      li {
+        margin-bottom: $gap-m;
+        display: flex;
+        justify-content: space-between;
+        color: $gray10;
+      }
+
+      .icons {
+        display: flex;
+        gap: $gap-7xl;
+        font-size: $font-size-m;
+      }
+    }
+
+    .coast {
+      margin-top: $gap-5xl;
+
+      .title {
+        font-weight: $font-weight-xl;
+        font-size: $font-size-s;
+      }
+    }
+
+
+  }
+}
